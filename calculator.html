@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+
+
+    <script>
+
+        function add() {
+            var num1 = parseInt(document.getElementById("num1").value);
+            var num2 = parseInt(document.getElementById("num2").value);
+            document.getElementById("result").value = num1 + num2;
+        }
+
+        function subtract() {
+            var num1 = parseInt(document.getElementById("num1").value);
+            var num2 = parseInt(document.getElementById("num2").value);
+            document.getElementById("result").value = num1 - num2;
+        }
+
+        function multiply() {
+            var num1 = parseInt(document.getElementById("num1").value);
+            var num2 = parseInt(document.getElementById("num2").value);
+            document.getElementById("result").value = num1 * num2;
+        }
+
+        function divide() {
+            var num1 = parseInt(document.getElementById("num1").value);
+            var num2 = parseInt(document.getElementById("num2").value);
+            document.getElementById("result").value = num1 / num2;
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+    <label for="num1">Enter first number:</label>
+    <input type="number" id="num1">
+
+    <label for="num2">Enter second number:</label>
+    <input type="number" id="num2">
+
+    <br><br>
+
+    <input type="button" onclick="add()"  value="Add">
+    <input type="button" onclick="subtract()"   value="Subtract">
+    <input type="button" onclick="multiply()" value="Multiply">
+    <input type="button" onclick="divide()" value="Divide">
+
+    <br><br>
+
+    <label for="result">Result:</label>
+    <input type="number" id="result" disabled>
+
+    <script src="calculator.js"></script>
+</body>
+
+</html>
